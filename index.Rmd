@@ -1,0 +1,20 @@
+---
+title: "Ziyang Tian"
+---
+
+# Welcome
+
+Hello! I am Ziyang Tian, a graduate student studying biostatistics at
+Columbia University. This website introduces my academic background and
+shares work from my data science coursework.
+
+# Explore this website
+
+- My [resume](resume.html) describes my education and relevant experience.
+- My [Instacart dashboard](dashboard.html) explores grocery shopping
+  patterns through three interactive visualizations.
+- My [GitHub profile](https://github.com/ziyang-tian) contains my public
+  code repositories.
+
+The dashboard was developed for P8105 and uses the Instacart dataset
+distributed with the `p8105.datasets` R package.

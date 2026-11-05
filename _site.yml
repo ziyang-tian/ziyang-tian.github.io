@@ -1,0 +1,28 @@
+name: "ziyang-tian-website"
+output_dir: "."
+navbar:
+  title: "Ziyang Tian"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Dashboard"
+      href: dashboard.html
+  right:
+    - text: "GitHub"
+      href: https://github.com/ziyang-tian
+    - text: "Email"
+      href: mailto:zt2426@cumc.columbia.edu
+    - text: "LinkedIn"
+      href: https://www.linkedin.com/in/%E7%B4%AB%E6%B4%8B-%E7%94%B0-609163438/
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    toc: false
+    self_contained: false
+    lib_dir: site_libs
+exclude:
+  - "README.md"
+  - "build_site.R"
