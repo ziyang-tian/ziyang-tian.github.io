@@ -108,3 +108,36 @@ department_plot = plotly::plot_ly(
 
 department_plot
 ```
+### Distinct orders by hour of day
+
+```{r hourly-line}
+hour_plot = plotly::plot_ly(
+  data = hour_summary,
+  x = ~order_hour_of_day,
+  y = ~orders,
+  type = "scatter",
+  mode = "lines+markers",
+  line = list(color = "#D77529", width = 3),
+  marker = list(color = "#D77529", size = 7),
+  hovertemplate = paste0(
+    "Hour: %{x}:00<br>",
+    "Distinct orders: %{y:,}<extra></extra>"
+  )
+) %>%
+  plotly::layout(
+    xaxis = list(
+      title = "Hour of day (0–23)",
+      tickmode = "linear",
+      tick0 = 0,
+      dtick = 3,
+      range = c(-0.5, 23.5)
+    ),
+    yaxis = list(title = "Distinct orders", tickformat = ",d"),
+    margin = list(l = 80, r = 25, t = 20, b = 65),
+    font = list(size = 14),
+    showlegend = FALSE
+  ) %>%
+  plotly::config(displaylogo = FALSE, responsive = TRUE)
+
+hour_plot
+```
