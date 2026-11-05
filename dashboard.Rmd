@@ -1,0 +1,76 @@
+---
+title: "Instacart: Shopping and Reordering"
+author: "Ziyang Tian"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+    theme: cosmo
+    self_contained: true
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = TRUE
+)
+
+data("instacart", package = "p8105.datasets")
+
+# Each row is a product within an order, rather than an entire order.
+shopping_data = instacart %>%
+  select(
+    order_id, product_id, department, aisle,
+    order_hour_of_day, reordered
+  )
+
+department_summary = shopping_data %>%
+  count(department, name = "product_rows", sort = TRUE)
+
+department_top = department_summary %>%
+  slice_head(n = 10)
+
+# Count each order only once when describing order timing.
+order_data = shopping_data %>%
+  distinct(order_id, order_hour_of_day)
+
+hour_summary = order_data %>%
+  count(order_hour_of_day, name = "orders") %>%
+  arrange(order_hour_of_day)
+
+aisle_summary = shopping_data %>%
+  group_by(aisle) %>%
+  summarise(
+    product_rows = n(),
+    unique_products = n_distinct(product_id),
+    known_reorder_rows = sum(!is.na(reordered)),
+    reordered_rows = sum(reordered == 1, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    reorder_rate = reordered_rows / na_if(known_reorder_rows, 0)
+  )
+
+# The minimum denominator is an exploratory display choice.
+aisle_plot_data = aisle_summary %>%
+  filter(known_reorder_rows >= 100, !is.na(reorder_rate))
+
+top_department = department_top %>%
+  slice_head(n = 1)
+
+peak_hours = hour_summary %>%
+  filter(orders == max(orders))
+
+dataset_summary = tibble::tibble(
+  Measure = c("Product records", "Distinct orders", "Distinct products"),
+  Value = c(
+    nrow(shopping_data),
+    n_distinct(shopping_data$order_id),
+    n_distinct(shopping_data$product_id)
+  )
+)
+```
