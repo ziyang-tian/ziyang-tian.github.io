@@ -185,3 +185,43 @@ aisle_plot = plotly::plot_ly(
 
 aisle_plot
 ```
+### Data, findings, and interpretation
+
+[Home](index.html) | [Resume](resume.html) |
+[Data documentation](https://p8105.com/dataset_instacart.html)
+
+This dashboard uses the Instacart data distributed with
+`p8105.datasets`. Each row represents a product within an order.
+All available records contribute to the summaries; no random sampling
+is used.
+
+```{r dataset-description}
+knitr::kable(dataset_summary, format.args = list(big.mark = ","))
+```
+
+The largest department by product records is
+**`r top_department$department`**, with
+**`r format(top_department$product_rows, big.mark = ",", trim = TRUE)`**
+records. The highest observed hourly order count occurs at
+**`r paste(sprintf("%02d:00", peak_hours$order_hour_of_day), collapse = ", ")`**.
+
+The bar chart displays only the ten largest departments. The line chart
+counts distinct orders, so orders with more products do not receive
+extra weight. Each scatterplot point represents an aisle with at least
+100 records having a known reorder indicator. Reorder rates use only
+records with known reorder status in their denominators.
+
+Hover to inspect values, drag to zoom, and double-click to reset the view.
+Differences between aisles are descriptive associations and do not
+establish that purchase volume causes reordering. These data are not a
+random sample of all Instacart purchases, so the findings may not
+generalize to all customers or time periods.
+
+<details>
+<summary>Reproducibility: R and package versions</summary>
+
+```{r session-information}
+sessionInfo()
+```
+
+</details>
