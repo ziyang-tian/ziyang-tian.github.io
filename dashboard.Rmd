@@ -141,3 +141,47 @@ hour_plot = plotly::plot_ly(
 
 hour_plot
 ```
+Row {data-height=500}
+-----------------------------------------------------------------------
+
+### Aisle-level purchasing and reordering
+
+```{r aisle-scatter}
+aisle_plot = plotly::plot_ly(
+  data = aisle_plot_data,
+  x = ~product_rows,
+  y = ~reorder_rate,
+  text = ~aisle,
+  type = "scatter",
+  mode = "markers",
+  marker = list(
+    color = "#6153A3",
+    size = 10,
+    opacity = 0.75,
+    line = list(color = "white", width = 0.5)
+  ),
+  hovertemplate = paste0(
+    "Aisle: %{text}<br>",
+    "Product records: %{x:,}<br>",
+    "Reorder rate: %{y:.1%}<extra></extra>"
+  )
+) %>%
+  plotly::layout(
+    xaxis = list(
+      title = "Product records (log scale)",
+      type = "log",
+      tickformat = ",d"
+    ),
+    yaxis = list(
+      title = "Reorder rate",
+      tickformat = ".0%",
+      range = c(0, 1)
+    ),
+    margin = list(l = 85, r = 25, t = 20, b = 75),
+    font = list(size = 14),
+    showlegend = FALSE
+  ) %>%
+  plotly::config(displaylogo = FALSE, responsive = TRUE)
+
+aisle_plot
+```
