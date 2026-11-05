@@ -74,3 +74,37 @@ dataset_summary = tibble::tibble(
   )
 )
 ```
+Row {data-height=460}
+-----------------------------------------------------------------------
+
+### Top 10 departments by product records
+
+```{r department-bar}
+department_plot = plotly::plot_ly(
+  data = department_top,
+  x = ~product_rows,
+  y = ~department,
+  type = "bar",
+  orientation = "h",
+  marker = list(color = "#287C8E"),
+  hovertemplate = paste0(
+    "Department: %{y}<br>",
+    "Product records: %{x:,}<extra></extra>"
+  )
+) %>%
+  plotly::layout(
+    xaxis = list(title = "Product records", tickformat = ",d"),
+    yaxis = list(
+      title = "",
+      categoryorder = "array",
+      categoryarray = rev(department_top$department),
+      automargin = TRUE
+    ),
+    margin = list(l = 150, r = 25, t = 20, b = 65),
+    font = list(size = 14),
+    showlegend = FALSE
+  ) %>%
+  plotly::config(displaylogo = FALSE, responsive = TRUE)
+
+department_plot
+```
