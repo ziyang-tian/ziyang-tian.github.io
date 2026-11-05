@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Ziyang Tian</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li>
+  <a href="dashboard.html">Dashboard</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/ziyang-tian">GitHub</a>
+</li>
+<li>
+  <a href="mailto:zt2426@cumc.columbia.edu">Email</a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/%E7%B4%AB%E6%B4%8B-%E7%94%B0-609163438/">LinkedIn</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+
+<div id="ziyang-tian" class="section level1">
+<h1>Ziyang Tian</h1>
+<p>New York, NY</p>
+<p><a href="mailto:zt2426@cumc.columbia.edu">Email</a> | <a
+href="https://github.com/ziyang-tian">GitHub</a> | <a
+href="https://www.linkedin.com/in/%E7%B4%AB%E6%B4%8B-%E7%94%B0-609163438/">LinkedIn</a></p>
+</div>
+<div id="profile" class="section level1">
+<h1>Profile</h1>
+<p>I am a Master of Science in Biostatistics student at Columbia
+University with a background in public administration and experience in
+hospital reporting, survey research, and operational data analysis. I
+have used SQL and Excel to extract, clean, validate, and summarize
+administrative data for hospital reports. My undergraduate projects
+involved questionnaire design, descriptive analysis, and qualitative
+interviews on student well-being and social behavior. I am developing my
+R and Python skills through graduate coursework and seeking research
+assistant opportunities in biomedical data management, statistical
+analysis, and research reporting.</p>
+</div>
+<div id="education" class="section level1">
+<h1>Education</h1>
+<div id="columbia-university" class="section level2">
+<h2>Columbia University</h2>
+<p><strong>Mailman School of Public Health, New York, NY</strong></p>
+<p><strong>Master of Science in Biostatistics</strong> September
+2026–Present</p>
+<p>My current coursework includes Biostatistical Methods, Probability,
+and Data Science. My programming coursework covers data import,
+descriptive statistics, and visualization using R and Python.</p>
+</div>
+<div id="china-agricultural-university" class="section level2">
+<h2>China Agricultural University</h2>
+<p><strong>Beijing, China</strong></p>
+<p><strong>Bachelor of Management in Public Administration, Minor in
+Law</strong> September 2022–June 2026</p>
+<p>Relevant coursework included Probability Theory and Mathematical
+Statistics, Statistics, Linear Algebra, Advanced Mathematics, Management
+Information System, Methods of Social Research, Public Economics,
+Organizational Behavior, and Financial Management of Public
+Organization.</p>
+</div>
+</div>
+<div id="professional-experience" class="section level1">
+<h1>Professional Experience</h1>
+<div id="beijing-momo-technology-co.-ltd." class="section level2">
+<h2>Beijing Momo Technology Co., Ltd.</h2>
+<p><strong>Growth Operations Intern, Marketing Department</strong>
+Beijing, China | November 2025–February 2026</p>
+<ul>
+<li>I tracked daily registrations, conversion, and retention across
+acquisition channels, including Douyin, Kuaishou, Tencent, and Toutiao,
+and organized platform data for internal review.</li>
+<li>I compared cost per lead, cost per acquisition, and cost per
+registration across advertising and influencer channels to identify
+differences in acquisition efficiency.</li>
+<li>I prepared weekly Excel dashboards showing acquisition costs and
+funnel changes, checked missing or inconsistent records, and summarized
+week-over-week changes for the marketing team.</li>
+</ul>
+</div>
+<div id="the-966-hospital" class="section level2">
+<h2>The 966 Hospital</h2>
+<p><strong>Intern, Information and Statistics Department</strong>
+Liaoning, China | September 2025–October 2025</p>
+<ul>
+<li>I queried hospital administrative data in SQL and summarized
+admissions, available beds, and other service indicators by department,
+ward, and reporting period for routine reports.</li>
+<li>I checked extracted records for duplicates, missing fields, and date
+errors, and standardized department names and data formats before
+preparing summary tables.</li>
+<li>I compared SQL query results with departmental reports and helped
+investigate discrepancies in reported counts.</li>
+<li>I calculated month-over-month and year-over-year changes in hospital
+service indicators and prepared comparison tables describing differences
+across departments and reporting periods.</li>
+<li>I updated Excel tables and trend charts for weekly and monthly
+reports and extracted data for specific departments, date ranges, or
+services as requested.</li>
+</ul>
+</div>
+<div id="beijing-semeng-asset-management-co.-ltd."
+class="section level2">
+<h2>Beijing Semeng Asset Management Co., Ltd.</h2>
+<p><strong>Assistant to Data Analysis Team and Executive Office</strong>
+Beijing, China | January 2025–February 2025</p>
+<ul>
+<li>I organized financial market data in Excel and SQL-based systems and
+checked the consistency of figures used in internal reports and
+presentations.</li>
+<li>I assisted the data analysis team with report preparation, data
+collation, and materials for internal meetings and management
+updates.</li>
+</ul>
+</div>
+</div>
+<div id="research-and-academic-projects" class="section level1">
+<h1>Research and Academic Projects</h1>
+<div id="traditional-cultural-learning-and-student-self-worth"
+class="section level2">
+<h2>Traditional Cultural Learning and Student Self-Worth</h2>
+<p><strong>Undergraduate Research Program, China Agricultural
+University</strong> November 2023–November 2024</p>
+<ul>
+<li>I helped design questionnaires based on the Adolescent Self-Worth
+Scale and collect pre- and post-program responses from 12 undergraduate
+participants in a project supervised by Associate Professor Huiyong
+Zheng.</li>
+<li>I organized survey responses, semi-structured interview notes, and
+reflective journals, used SPSS to summarize quantitative measures, and
+contributed to the interpretation of survey and interview findings.</li>
+<li>I supported four workshops involving traditional texts, tea culture,
+and reflective activities and contributed to the final report describing
+the program and participants’ responses.</li>
+</ul>
+</div>
+<div id="social-media-self-presentation-and-interpersonal-relationships"
+class="section level2">
+<h2>Social Media Self-Presentation and Interpersonal Relationships</h2>
+<p><strong>Social Research Methods Course Project, China Agricultural
+University</strong> July 2024–December 2024</p>
+<ul>
+<li>I helped design and distribute a structured questionnaire on social
+media self-presentation and interpersonal relationships among
+undergraduates at Yantai Institute. The project collected more than 200
+valid responses.</li>
+<li>I coded survey responses in SPSS and produced descriptive summaries
+of self-presentation behaviors and measures of social
+connectedness.</li>
+<li>I contributed to an academic report documenting the research
+question, questionnaire design, data summaries, and interpretation of
+the observed patterns.</li>
+</ul>
+</div>
+<div id="rural-cultural-tourism-and-environmental-planning"
+class="section level2">
+<h2>Rural Cultural Tourism and Environmental Planning</h2>
+<p><strong>Summer Field Research Project, China Agricultural
+University</strong> July 2024–September 2024</p>
+<ul>
+<li>I conducted on-site surveys and structured interviews with residents
+and local officials in Yaqian Village, Shandong Province, collecting
+information on public infrastructure, cultural resources, and tourism
+facilities.</li>
+<li>I organized survey responses and field notes in Excel and prepared
+descriptive summaries of local conditions to support the team’s
+analysis.</li>
+<li>I contributed to a research report on rural environmental planning
+and cultural tourism, including recommendations related to
+infrastructure, public resource use, and environmental protection.</li>
+</ul>
+</div>
+<div
+id="spiritual-and-blessing-seeking-practices-among-university-students"
+class="section level2">
+<h2>Spiritual and Blessing-Seeking Practices among University
+Students</h2>
+<p><strong>Statistics Course Project, China Agricultural
+University</strong> September 2023–December 2023</p>
+<ul>
+<li>I helped design and distribute an online questionnaire examining
+spiritual and blessing-seeking practices among university students. The
+project collected 131 valid responses.</li>
+<li>I organized questionnaire data and prepared descriptive summaries of
+reported behaviors, participant characteristics, and students’ reasons
+for participating in these practices.</li>
+<li>I contributed to the final statistics course report, explaining the
+survey design and findings and discussing their social and psychological
+context.</li>
+</ul>
+</div>
+</div>
+<div id="skills" class="section level1">
+<h1>Skills</h1>
+<p><strong>Software and tools:</strong> SQL, Microsoft Excel, SPSS,
+Microsoft Word, and PowerPoint. I am developing R and Python skills
+through introductory graduate coursework.</p>
+<p><strong>Analytical methods:</strong> Data extraction, cleaning, and
+validation; grouped summaries and reporting-period comparisons;
+descriptive statistics; questionnaire design and survey coding;
+semi-structured interviews; and research report preparation.</p>
+<p><strong>Languages:</strong> Mandarin Chinese (native) and English
+(IELTS 7.5).</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

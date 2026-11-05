@@ -1,0 +1,178 @@
+---
+title: "Resume"
+---
+
+# Ziyang Tian
+
+New York, NY
+
+[Email](mailto:zt2426@cumc.columbia.edu) |
+[GitHub](https://github.com/ziyang-tian) |
+[LinkedIn](https://www.linkedin.com/in/%E7%B4%AB%E6%B4%8B-%E7%94%B0-609163438/)
+
+# Profile
+
+I am a Master of Science in Biostatistics student at Columbia University
+with a background in public administration and experience in hospital
+reporting, survey research, and operational data analysis. I have used
+SQL and Excel to extract, clean, validate, and summarize administrative
+data for hospital reports. My undergraduate projects involved questionnaire
+design, descriptive analysis, and qualitative interviews on student
+well-being and social behavior. I am developing my R and Python skills
+through graduate coursework and seeking research assistant opportunities
+in biomedical data management, statistical analysis, and research reporting.
+
+# Education
+
+## Columbia University
+
+**Mailman School of Public Health, New York, NY**
+
+**Master of Science in Biostatistics**
+September 2026–Present
+
+My current coursework includes Biostatistical Methods, Probability,
+and Data Science. My programming coursework covers data import,
+descriptive statistics, and visualization using R and Python.
+
+## China Agricultural University
+
+**Beijing, China**
+
+**Bachelor of Management in Public Administration, Minor in Law**
+September 2022–June 2026
+
+Relevant coursework included Probability Theory and Mathematical
+Statistics, Statistics, Linear Algebra, Advanced Mathematics,
+Management Information System, Methods of Social Research,
+Public Economics, Organizational Behavior, and Financial Management
+of Public Organization.
+
+# Professional Experience
+
+## Beijing Momo Technology Co., Ltd.
+
+**Growth Operations Intern, Marketing Department**
+Beijing, China | November 2025–February 2026
+
+- I tracked daily registrations, conversion, and retention across
+  acquisition channels, including Douyin, Kuaishou, Tencent, and
+  Toutiao, and organized platform data for internal review.
+- I compared cost per lead, cost per acquisition, and cost per
+  registration across advertising and influencer channels to identify
+  differences in acquisition efficiency.
+- I prepared weekly Excel dashboards showing acquisition costs and
+  funnel changes, checked missing or inconsistent records, and
+  summarized week-over-week changes for the marketing team.
+
+## The 966 Hospital
+
+**Intern, Information and Statistics Department**
+Liaoning, China | September 2025–October 2025
+
+- I queried hospital administrative data in SQL and summarized
+  admissions, available beds, and other service indicators by
+  department, ward, and reporting period for routine reports.
+- I checked extracted records for duplicates, missing fields, and
+  date errors, and standardized department names and data formats
+  before preparing summary tables.
+- I compared SQL query results with departmental reports and helped
+  investigate discrepancies in reported counts.
+- I calculated month-over-month and year-over-year changes in hospital
+  service indicators and prepared comparison tables describing
+  differences across departments and reporting periods.
+- I updated Excel tables and trend charts for weekly and monthly
+  reports and extracted data for specific departments, date ranges,
+  or services as requested.
+
+## Beijing Semeng Asset Management Co., Ltd.
+
+**Assistant to Data Analysis Team and Executive Office**
+Beijing, China | January 2025–February 2025
+
+- I organized financial market data in Excel and SQL-based systems
+  and checked the consistency of figures used in internal reports
+  and presentations.
+- I assisted the data analysis team with report preparation,
+  data collation, and materials for internal meetings and
+  management updates.
+
+# Research and Academic Projects
+
+## Traditional Cultural Learning and Student Self-Worth
+
+**Undergraduate Research Program, China Agricultural University**
+November 2023–November 2024
+
+- I helped design questionnaires based on the Adolescent Self-Worth
+  Scale and collect pre- and post-program responses from 12
+  undergraduate participants in a project supervised by
+  Associate Professor Huiyong Zheng.
+- I organized survey responses, semi-structured interview notes,
+  and reflective journals, used SPSS to summarize quantitative
+  measures, and contributed to the interpretation of survey
+  and interview findings.
+- I supported four workshops involving traditional texts,
+  tea culture, and reflective activities and contributed to
+  the final report describing the program and participants'
+  responses.
+
+## Social Media Self-Presentation and Interpersonal Relationships
+
+**Social Research Methods Course Project, China Agricultural University**
+July 2024–December 2024
+
+- I helped design and distribute a structured questionnaire on
+  social media self-presentation and interpersonal relationships
+  among undergraduates at Yantai Institute. The project collected
+  more than 200 valid responses.
+- I coded survey responses in SPSS and produced descriptive
+  summaries of self-presentation behaviors and measures of
+  social connectedness.
+- I contributed to an academic report documenting the research
+  question, questionnaire design, data summaries, and interpretation
+  of the observed patterns.
+
+## Rural Cultural Tourism and Environmental Planning
+
+**Summer Field Research Project, China Agricultural University**
+July 2024–September 2024
+
+- I conducted on-site surveys and structured interviews with
+  residents and local officials in Yaqian Village, Shandong Province,
+  collecting information on public infrastructure, cultural resources,
+  and tourism facilities.
+- I organized survey responses and field notes in Excel and prepared
+  descriptive summaries of local conditions to support the team's
+  analysis.
+- I contributed to a research report on rural environmental planning
+  and cultural tourism, including recommendations related to
+  infrastructure, public resource use, and environmental protection.
+
+## Spiritual and Blessing-Seeking Practices among University Students
+
+**Statistics Course Project, China Agricultural University**
+September 2023–December 2023
+
+- I helped design and distribute an online questionnaire examining
+  spiritual and blessing-seeking practices among university students.
+  The project collected 131 valid responses.
+- I organized questionnaire data and prepared descriptive summaries
+  of reported behaviors, participant characteristics, and students'
+  reasons for participating in these practices.
+- I contributed to the final statistics course report, explaining
+  the survey design and findings and discussing their social
+  and psychological context.
+
+# Skills
+
+**Software and tools:** SQL, Microsoft Excel, SPSS, Microsoft Word,
+and PowerPoint. I am developing R and Python skills through
+introductory graduate coursework.
+
+**Analytical methods:** Data extraction, cleaning, and validation;
+grouped summaries and reporting-period comparisons; descriptive
+statistics; questionnaire design and survey coding; semi-structured
+interviews; and research report preparation.
+
+**Languages:** Mandarin Chinese (native) and English (IELTS 7.5).
